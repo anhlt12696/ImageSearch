@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvtime"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:gravity="center_vertical"
+            android:text="@string/order"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tv_popular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/btn_red_uncheck"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="5dp"
+            android:text="@string/popular"
+            android:textColor="@color/text_color_bottom_sheet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvtime" />
+
+        <TextView
+            android:id="@+id/tv_lastes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_red_uncheck"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="5dp"
+            android:text="@string/lastes"
+            android:textColor="@color/text_color_bottom_sheet"
+            android:layout_marginStart="8dp"
+           app:layout_constraintStart_toEndOf="@id/tv_popular"
+           app:layout_constraintTop_toTopOf="@id/tv_popular" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_time">
+
+        <TextView
+            android:id="@+id/tvsize"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:gravity="center_vertical"
+            android:text="Orientation"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/btn_red_uncheck"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="5dp"
+            android:text="All"
+            android:textColor="@color/text_color_bottom_sheet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvsize" />
+
+        <TextView
+            android:id="@+id/tv_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_red_uncheck"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="5dp"
+            android:text="Horizontal"
+            android:textColor="@color/text_color_bottom_sheet"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/tv_all"
+            app:layout_constraintTop_toTopOf="@id/tv_all" />
+
+        <TextView
+            android:id="@+id/tv_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_red_uncheck"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="5dp"
+            android:text="vertical"
+            android:textColor="@color/text_color_bottom_sheet"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/tv_horizontal"
+            app:layout_constraintTop_toTopOf="@id/tv_horizontal" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_size">
+
+        <TextView
+            android:id="@+id/tvcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:gravity="center_vertical"
+            android:text="@string/color"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_white_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/btn_red_uncheck"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="5dp"
+            android:text="@string/white_black"
+            android:textColor="@color/text_color_bottom_sheet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvcolor" />
+
+        <TextView
+            android:id="@+id/tv_transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_red_uncheck"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="5dp"
+            android:text="@string/transparent"
+            android:textColor="@color/text_color_bottom_sheet"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/tv_white_black"
+            app:layout_constraintTop_toTopOf="@id/tv_white_black" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_color"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_white_black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_file_format"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_color">
+
+        <TextView
+            android:id="@+id/tv_file_format"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:gravity="center_vertical"
+            android:text="Category"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_back_ground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/btn_red_uncheck"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="5dp"
+            android:text="backgrounds"
+            android:textColor="@color/text_color_bottom_sheet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_file_format" />
+
+        <TextView
+            android:id="@+id/tv_fashion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_red_uncheck"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="5dp"
+            android:text="fashion"
+            android:textColor="@color/text_color_bottom_sheet"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/tv_back_ground"
+            app:layout_constraintTop_toTopOf="@id/tv_back_ground" />
+
+        <TextView
+            android:id="@+id/tv_nature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_red_uncheck"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="5dp"
+            android:text="nature"
+            android:textColor="@color/text_color_bottom_sheet"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/tv_fashion"
+            app:layout_constraintTop_toTopOf="@id/tv_fashion" />
+
+        <TextView
+            android:id="@+id/tv_science"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/btn_red_uncheck"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="5dp"
+            android:text="science"
+            android:textColor="@color/text_color_bottom_sheet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_back_ground" />
+
+        <TextView
+            android:id="@+id/tv_education"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_red_uncheck"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="5dp"
+            android:text="education"
+            android:textColor="@color/text_color_bottom_sheet"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/tv_science"
+            app:layout_constraintTop_toTopOf="@id/tv_science" />
+
+        <TextView
+            android:id="@+id/tv_feeling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_red_uncheck"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="5dp"
+            android:text="feelings"
+            android:textColor="@color/text_color_bottom_sheet"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/tv_education"
+            app:layout_constraintTop_toTopOf="@id/tv_education" />
+
+        <TextView
+            android:id="@+id/tv_health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/btn_red_uncheck"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="5dp"
+            android:text="health"
+            android:textColor="@color/text_color_bottom_sheet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_science" />
+
+        <TextView
+            android:id="@+id/tv_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_red_uncheck"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="5dp"
+            android:text="people"
+            android:textColor="@color/text_color_bottom_sheet"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/tv_health"
+            app:layout_constraintTop_toTopOf="@id/tv_health" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_aspect_radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_file_format">
+
+        <TextView
+            android:id="@+id/tv_aspect_ratio"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:gravity="center_vertical"
+            android:text="Heigh and  Width"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/ed_heigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/btn_red_uncheck"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="5dp"
+            android:hint="Height"
+            android:inputType="number"
+            android:textColorHint="@color/text_color_bottom_sheet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_aspect_ratio" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/ed_width"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_red_uncheck"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="5dp"
+            android:hint="Width"
+            android:clickable="true"
+            android:inputType="number"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/text_color_bottom_sheet"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/ed_heigh"
+            app:layout_constraintTop_toTopOf="@id/ed_heigh" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_aspect_radio">
+        <TextView
+            android:id="@+id/tv_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/btn_red_uncheck"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="10dp"
+            android:text="@string/reset"
+            android:textColor="@color/text_color_bottom_sheet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_red"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="10dp"
+            android:text="@string/apply"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/_8sdp"
+            app:layout_constraintStart_toEndOf="@id/tv_reset"
+            app:layout_constraintTop_toTopOf="@id/tv_reset" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">ImageSearch</string>
+
+    <!--    Theme-->
+    <string name="next">NEXT</string>
+    <string name="choose_your_experience">Choose your experience</string>
+    <string name="theme_content">Ready to get started? Select how you prefer to view your interface.</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="image_search">Image Search</string>
+    <string name="search_image">Search Image</string>
+    <string name="image">Image</string>
+    <string name="search">Search</string>
+    <string name="search_history">Search History</string>
+
+
+    <!--    Language-->
+    <string name="english">English</string>
+    <string name="hindi">Hindi</string>
+    <string name="spanish">Spanish</string>
+    <string name="french">French</string>
+    <string name="arabic">Arabic</string>
+    <string name="bengali">Bengali</string>
+    <string name="russian">Russian</string>
+    <string name="portuguese">Portuguese</string>
+    <string name="indonesian">Indonesian</string>
+    <string name="german">German</string>
+    <string name="italian">Italian</string>
+    <string name="korean">Korean</string>
+    <string name="language">Language</string>
+    <string name="apply">Apply</string>
+    <string name="select_language">Select language</string>
+    <string name="next_hoa">NEXT</string>
+
+    <!--    Intro-->
+    <string name="intro_1_title">Search</string>
+    <string name="intro_1_content">Images from the biggest collection</string>
+    <string name="intro_3_title">Save</string>
+    <string name="intro_3_content">All of your images in the gallery</string>
+    <string name="intro_2_title">Fastly Find</string>
+    <string name="intro_2_content">The photos that you want to see</string>
+    <string name="btn_next">NEXT</string>
+
+
+    <!--    permission-->
+    <string name="btn_continue">Continue</string>
+    <string name="per_mission_message_camera">You must grant camera permission to use the app</string>
+    <string name="per_mission_title_camera">Camera Permission</string>
+    <string name="permission_go_to_setting">Go to setting</string>
+    <string name="permission_cancel">Cancel</string>
+    <string name="allow_access">Allow access </string>
+    <string name="allowed">Permission allowed.</string>
+    <string name="not_allowed">Permission is not allowed.</string>
+    <string name="grand_permission">Grant permission later</string>
+    <string name="permission_content">This app requires access to <b>Media and Files</b> to work properly</string>
+    <string name="permission">Grant Permission</string>
+    <string name="media_and_file">Media and File</string>
+
+    <!--    search fragment-->
+    <string name="img_search">Image Search</string>
+    <string name="history">History</string>
+
+    <!--    bottom_sheet-->
+    <string name="order">Order</string>
+    <string name="popular">Popular</string>
+    <string name="lastes">Lastes</string>
+
+    <string name="size">Size</string>
+    <string name="icon">Icon</string>
+    <string name="medium">Medium</string>
+    <string name="large">Large</string>
+
+    <string name="color">Color</string>
+    <string name="white_black">White Black</string>
+    <string name="transparent">Transparent</string>
+
+    <string name="file_format">File format</string>
+    <string name="jpg">JPG Files</string>
+    <string name="png">PNG Files</string>
+    <string name="gif">GIF Files</string>
+    <string name="bmp">BMP Files</string>
+    <string name="svg">SVG Files</string>
+    <string name="webp">WEBP Files</string>
+    <string name="ico">ICO Files</string>
+
+    <string name="image_type">Image Type</string>
+    <string name="tall">Tall</string>
+    <string name="square">Square</string>
+    <string name="wide">Wide</string>
+    <string name="panoramic">Panoramic</string>
+
+    <string name="reset">Reset</string>
+
+
+    <string name="download_image">Download Images</string>
+
+
+</resources>

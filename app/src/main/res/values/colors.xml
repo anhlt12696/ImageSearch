@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="second_text_color_light">#4F646F</color>
+    <color name="second_text_color_dark">#C7D3D9</color>
+    <color name="light_switch_theme_tv_light">#263238</color>
+    <color name="light_switch_theme_tv_dark">#4F646F</color>
+    <color name="dark_switch_theme_tv_light">#4F646F</color>
+    <color name="dark_switch_theme_tv_dark">#FFFFFF</color>
+    <color name="red">#D02A23</color>
+    <color name="bottom_checked">#1FAEB5</color>
+    <color name="bottom_un_checked">#D0D0D1</color>
+
+    <color name="yellow">#FBE413</color>
+    <color name="green">#1EF35A</color>
+    <color name="blue">#1E74F3</color>
+    <color name="pink">#F31EB8</color>
+    <color name="cyan">#1EF3F3</color>
+    <color name="orange">#F3781E</color>
+    <color name="yellow_2">#F3EB1E</color>
+    <color name="violet">#7C1EF3</color>
+    <color name="xanh_la_nhat">#D6F31E</color>
+    <color name="cyan_2">#1EDAF3</color>
+    <color name="orange_2">#F36B1E</color>
+    <color name="text_color_bottom_sheet">#AAAAAA</color>
+
+    <color name="text_title">#525252</color>
+
+
+
+
+</resources>
