@@ -30,24 +30,6 @@ class LanguageActivity : BaseActivity() {
         binding = ActivityLanguageBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //test ads
-//        AdsManager.loadAdNative(this,AdsManager.nativeIntro)
-//        AdsManager.loadInter(this,AdsManager.interIntro)
-//        if(intent.getBooleanExtra("theme",false)) {
-//            AdsManager.showAdInter(
-//                this,
-//                AdsManager.interTheme,
-//                "inter_language",
-//                object : AdsManager.AdListenerNew {
-//                    override fun onAdClosed() {}
-//
-//                    override fun onFailed() {}
-//
-//                })
-//        }
-//        AdsManager.showAdNative(this,AdsManager.nativeLanguage,binding.flNative)
-
-
         listTitle.add(Language("English", "en"))
         listTitle.add(Language("Hindi", "hi"))
         listTitle.add(Language("Spanish", "es"))
@@ -104,14 +86,7 @@ class LanguageActivity : BaseActivity() {
             //ktra
             setFirtOpen(this, false)
             setPreLanguageName(this, language_name)
-//            if (intent.getBooleanExtra("setting", false)) {
-//                val i = Intent(this@LanguageActivity, StartActivity::class.java)
-//                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
-//                startActivity(i)
-//            } else {
-//                val launchIntro: Intent = Intent(this@LanguageActivity, IntroActivity::class.java)
-//                startActivity(launchIntro)
-//            }
+
             if (intent.getBooleanExtra("setting", false)) {
                 val i = Intent(this@LanguageActivity, MainActivity::class.java)
                 binding.backArrow.visibility = View.VISIBLE

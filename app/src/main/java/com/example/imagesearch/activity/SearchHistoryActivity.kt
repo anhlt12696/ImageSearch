@@ -87,8 +87,6 @@ class SearchHistoryActivity :  BaseActivity(), AdapterClick, HistoryAdapter.Clic
         dialog.show()
     }
 
-
-
     override fun itemClick(hits: Hits, position: Int) {
 
     }

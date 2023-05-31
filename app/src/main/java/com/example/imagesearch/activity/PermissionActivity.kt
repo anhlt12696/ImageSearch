@@ -19,8 +19,6 @@ import com.example.imagesearch.base.BaseActivity
 import com.example.imagesearch.base.Common
 import com.example.imagesearch.databinding.ActivityPermissionBinding
 import com.vapp.admoblibrary.ads.AppOpenManager
-
-
 class PermissionActivity : BaseActivity() {
     lateinit var binding: ActivityPermissionBinding
     private var checkPermission : Boolean = false
@@ -93,8 +91,6 @@ class PermissionActivity : BaseActivity() {
         }
 
     }
-
-
 
 
     override fun onRequestPermissionsResult(

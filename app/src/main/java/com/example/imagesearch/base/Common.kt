@@ -14,30 +14,11 @@ object Common {
         preferences.edit().putBoolean("KEY_MODE_LIGHT", open).apply()
     }
 
-
-//    fun logEvent(context: Context, eventName: String) {
-//        val firebaseAnalytics = FirebaseAnalytics.getInstance(context)
-//        val bundle = Bundle()
-//        bundle.putString("onCreateScreeen", context.javaClass.simpleName)
-//        firebaseAnalytics.logEvent(eventName + "_" + BuildConfig.VERSION_CODE, bundle)
-//        val eventParams: MutableMap<String, String> = HashMap()
-//        eventParams["screen"] = context.javaClass.simpleName
-//        Log.e("==event", eventName + "_" + BuildConfig.VERSION_CODE)
-//    }
-
     fun getLightMode(context: Context): Boolean {
         val preferences = context.getSharedPreferences(context.packageName, Context.MODE_PRIVATE)
         return preferences.getBoolean("KEY_MODE_LIGHT", false)
     }
 
-//    fun setThemeForActivity(activity: Activity) {
-//        val lightMode = getLightMode(activity)
-//        if (lightMode) {
-//            activity.setTheme(R.style.light_mode)
-//        } else {
-//            activity.setTheme(R.style.dark_mode)
-//        }
-//    }
     fun setThemeForActivity(activity: Activity) {
         when (getTheme(activity)) {
             1 -> {

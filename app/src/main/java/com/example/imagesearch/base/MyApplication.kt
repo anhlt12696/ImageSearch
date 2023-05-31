@@ -12,22 +12,7 @@ import java.util.*
 class MyApplication : Application(), Application.ActivityLifecycleCallbacks{
     override fun onCreate() {
         super.onCreate()
-
-        //isdebug = true ->> qc test
-        //isenableAds : bat tat qc
-//        AdmodUtils.getInstance().initAdmob(this, 10000, true, true)
-//        AppOpenManager.getInstance().init(this, Ads.ON_RESUME.adKey)
-//        AppOpenManager.getInstance().disableAppResumeWithActivity(SplashActivity::class.java)
         registerActivityLifecycleCallbacks(this)
-//        Realm.init(this)
-//        val config = RealmConfiguration.Builder()
-////            .name("myRealm.realm")
-//            .compactOnLaunch()
-//            .allowWritesOnUiThread(true)
-//            .build()
-//        Realm.setDefaultConfiguration(config)
-//        super.onCreate()
-//        registerActivityLifecycleCallbacks(this)
 
     }
 
@@ -170,20 +155,6 @@ fun Context?.setFirtOpen3(context: Context, open: Boolean) {
     preferences.edit().putBoolean("KEY_OPEN3", open).apply()
 }
 
-fun Context?.getFirtOpenEvent(mContext: Context): Boolean {
-    val preferences = mContext.getSharedPreferences(
-        mContext.packageName,
-        Application.MODE_MULTI_PROCESS
-    )
-    return preferences.getBoolean("KEY_OPEN_EVENT", true)
-}
-fun Context?.setFirtOpenEvent(context: Context, open: Boolean) {
-    val preferences = context.getSharedPreferences(
-        context.packageName,
-        Application.MODE_MULTI_PROCESS
-    )
-    preferences.edit().putBoolean("KEY_OPEN_EVENT", open).apply()
-}
 
 fun Context?.setLocale(context: Context, lang: String?) {
     val myLocale = Locale(lang)

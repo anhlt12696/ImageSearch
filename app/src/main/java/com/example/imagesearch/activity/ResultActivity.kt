@@ -30,9 +30,9 @@ import retrofit2.Call
 import retrofit2.Callback
 
 
-class ResultActivity : BaseActivity(), ClickItem , AdapterClick{
+class ResultActivity : BaseActivity(), ClickItem, AdapterClick {
 
-    private lateinit var binding : ActivityResultBinding
+    private lateinit var binding: ActivityResultBinding
     private var imageList: List<Hits>? = null
 
 
@@ -42,13 +42,13 @@ class ResultActivity : BaseActivity(), ClickItem , AdapterClick{
 
     private var query: String? = null
 
-    var image_type : String? = null
-    var orientation : String? = null
-    var category : String? = null
+    var image_type: String? = null
+    var orientation: String? = null
+    var category: String? = null
     var min_width = 0;
     var min_height = 0
-    var color : String? = ""
-  //  private lateinit var bottomSheetFragment : BottomSheetFragment
+    var color: String? = ""
+    //  private lateinit var bottomSheetFragment : BottomSheetFragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,10 +57,7 @@ class ResultActivity : BaseActivity(), ClickItem , AdapterClick{
 
         mlistHistory = HistoryDatabase.getInstance(this).historyDao().listHistory
 
-
-
-
-        historyAdapter = HistoryAdapter(this,mlistHistory,this)
+        historyAdapter = HistoryAdapter(this, mlistHistory, this)
         historyAdapter!!.setData(mlistHistory)
         imageList = ArrayList()
         binding.rvGallery.setHasFixedSize(true)
@@ -77,7 +74,7 @@ class ResultActivity : BaseActivity(), ClickItem , AdapterClick{
 
         val intent = intent
         if (intent != null) {
-             query = intent.getStringExtra("query")
+            query = intent.getStringExtra("query")
         }
         query?.let { getThumbnail(it) }
 
@@ -118,12 +115,14 @@ class ResultActivity : BaseActivity(), ClickItem , AdapterClick{
     }
 
     fun showBottomSheetDialog() {
-        BottomSheetFragment().show(supportFragmentManager,"BottomSheetFragment")
+        BottomSheetFragment().show(supportFragmentManager, "BottomSheetFragment")
 
     }
+
     private fun getThumbnail(query: String) {
-        val string: String = "Heigh: " + Common.getMinHeight(this) +"---Width: "+ Common.getMinWidth(this)
-        Log.d("===Str" , string)
+        val string: String =
+            "Heigh: " + Common.getMinHeight(this) + "---Width: " + Common.getMinWidth(this)
+        Log.d("===Str", string)
         val responseCall = RetrofitClient.getInstance().myApi.getImages(
             1,
             50,
@@ -159,6 +158,7 @@ class ResultActivity : BaseActivity(), ClickItem , AdapterClick{
             }
         })
     }
+
     override fun dispatchTouchEvent(ev: MotionEvent?): Boolean {
         if (currentFocus != null) {
             val imm = this.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
@@ -180,10 +180,11 @@ class ResultActivity : BaseActivity(), ClickItem , AdapterClick{
         historyAdapter!!.setData(mlistHistory)
 
     }
+
     override fun itemClick(hits: Hits, position: Int) {
         val intent = Intent(this@ResultActivity, FullScreenImageActivity::class.java)
         intent.putExtra("position", hits.largeImageURL)
-        intent.putExtra("query",query)
+        intent.putExtra("query", query)
         Log.d("test_url", "url: " + hits.largeImageURL)
         startActivity(intent)
     }

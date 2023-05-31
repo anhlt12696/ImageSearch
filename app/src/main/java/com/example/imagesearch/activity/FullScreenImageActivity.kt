@@ -78,7 +78,6 @@ class FullScreenImageActivity : BaseActivity(), AdapterClick {
 
         thumbnail
 
-
         binding!!.floatingSearchView.setSearchText(query)
         binding!!.homeButton.setOnClickListener {
             val intent2 = Intent(this, MainActivity::class.java)
